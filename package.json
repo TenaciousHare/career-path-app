@@ -15,12 +15,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pre-commit": "lint-staged"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+  "lint-staged": {
+    "src/**/*.js,json": [
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "browserslist": {
@@ -34,5 +35,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
+    "prettier": "2.6.2"
   }
 }
