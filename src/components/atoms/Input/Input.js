@@ -19,11 +19,11 @@ export const StyledInput = styled.input`
   height: 40px;
   border-radius: 6px;
   margin: 0px 4px;
-  background-color: #edf5f4;
+  background-color: ${({ theme }) => theme.colors.lightGrey};
   border: none;
   outline: none;
   // text-inside
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: ${({ theme }) => theme.fontWeight.m};
+  font-size: ${({ theme }) => theme.fontSize.m};
   line-height: 18px;
 `;

@@ -8,10 +8,10 @@ export const SubmitButton = styled.button`
   padding: 8px;
   width: 320px;
   height: 40px;
-  background-color: #da4b26;
+  background-color: ${({ theme }) => theme.colors.orange};
   border-radius: 6px;
   border: none;
   margin: 16px 0;
   color: white;
-  font-size: 16px;
+  font-size: ${({ theme }) => theme.fontSize.l};
 `;

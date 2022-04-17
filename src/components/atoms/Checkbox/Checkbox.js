@@ -9,7 +9,3 @@ export const CheckboxWrapper = styled.div`
   padding: 8px;
   margin: 8px 0;
 `;
-
-export const StyledCheckbox = styled.input.attrs({ type: 'checkbox' })`
-  background-color: #da4b26;
-`;
