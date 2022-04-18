@@ -26,4 +26,6 @@ export const StyledInput = styled.input`
   font-weight: ${({ theme }) => theme.fontWeight.m};
   font-size: ${({ theme }) => theme.fontSize.m};
   line-height: 18px;
+
+  border-right: 16px solid transparent;
 `;

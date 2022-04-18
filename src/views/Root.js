@@ -1,5 +1,5 @@
 import React from 'react';
-import FormField from 'components/organisms/FormField/FormField';
+import Form from 'components/organisms/Form/Form';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'assets/styles/GlobalStyle';
 import { theme } from 'assets/styles/theme';
@@ -17,7 +17,7 @@ function Root() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Wrapper>
-        <FormField />
+        <Form />
       </Wrapper>
     </ThemeProvider>
   );
