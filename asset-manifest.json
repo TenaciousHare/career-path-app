@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/career-path-app/static/css/main.e6c13ad2.css",
-    "main.js": "/career-path-app/static/js/main.662b74e7.js",
+    "main.js": "/career-path-app/static/js/main.b1c0491b.js",
     "index.html": "/career-path-app/index.html",
     "main.e6c13ad2.css.map": "/career-path-app/static/css/main.e6c13ad2.css.map",
-    "main.662b74e7.js.map": "/career-path-app/static/js/main.662b74e7.js.map"
+    "main.b1c0491b.js.map": "/career-path-app/static/js/main.b1c0491b.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.662b74e7.js"
+    "static/js/main.b1c0491b.js"
   ]
 }
