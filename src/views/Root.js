@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'assets/styles/GlobalStyle';
 import { theme } from 'assets/styles/theme';
 import Preferences from 'components/organisms/Preferences/Preferences';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import MainTemplate from 'components/templates/MainTemplate/MainTemplate';
 import Home from 'components/organisms/Home/Home';
@@ -61,7 +61,8 @@ const Root = () => {
         <MainTemplate>
           <Wrapper>
             <Routes>
-              <Route index element={<Home />} />
+              <Route path="/career-path-app" element={<Navigate replace to="/career-path-app/home" />} />
+              <Route path="/career-path-app/home" element={<Home />} />
               <Route
                 path="/career-path-app/add-preference"
                 element={<Form formValues={formValues} handleInputChange={handleInputChange} handleAddPreference={handleAddPreference} />}
