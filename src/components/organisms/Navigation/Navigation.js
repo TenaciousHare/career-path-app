@@ -5,28 +5,28 @@ const Navigation = () => {
   return (
     <NavWrapper>
       <LinkWrapper>
-        <StyledLink to="/">
+        <StyledLink to="/career-path-app">
           <span className="icon">
             <i className="fa-solid fa-house" />
           </span>
           <span className="text">Home</span>
         </StyledLink>
 
-        <StyledLink to="/add-preference">
+        <StyledLink to="/career-path-app/add-preference">
           <span className="icon">
             <i className="fa-solid fa-file-circle-plus" />
           </span>
           <span className="text">Add preference</span>
         </StyledLink>
 
-        <StyledLink to="/show-preferences">
+        <StyledLink to="/career-path-app/show-preferences">
           <span className="icon">
             <i className="fa-solid fa-file-circle-check" />
           </span>
           <span className="text">Show preferences</span>
         </StyledLink>
 
-        <StyledLink to="/contact">
+        <StyledLink to="/career-path-app/contact">
           <span className="icon">
             <i className="fa-solid fa-address-book" />
           </span>

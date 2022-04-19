@@ -61,13 +61,13 @@ const Root = () => {
         <MainTemplate>
           <Wrapper>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/career-path-app" element={<Home />} />
               <Route
-                path="/add-preference"
+                path="/career-path-app/add-preference"
                 element={<Form formValues={formValues} handleInputChange={handleInputChange} handleAddPreference={handleAddPreference} />}
               />
-              <Route path="/show-preferences" element={<Preferences preferences={preferences} />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/career-path-app/show-preferences" element={<Preferences preferences={preferences} />} />
+              <Route path="/career-path-app/contact" element={<Contact />} />
             </Routes>
           </Wrapper>
         </MainTemplate>
