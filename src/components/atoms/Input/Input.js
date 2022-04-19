@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const InputsWrapper = styled.form`
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  width: 320px;
-  height: 472px;
-  margin: 16px 0;
-`;
 export const StyledInput = styled.input`
   display: flex;
   flex-direction: row;
