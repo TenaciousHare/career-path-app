@@ -4,13 +4,13 @@ import { StyledLabel } from 'components/atoms/Label/Label';
 import { StyledInput } from 'components/atoms/Input/Input';
 import { CheckboxWrapper, StyledCheckbox } from 'components/atoms/Checkbox/Checkbox';
 import { selectOptions } from 'data/selectOptions';
-const FormField = ({ type, name, id, label, isSelect, isCheckbox }) => {
+const FormField = ({ type, name, id, label, isSelect, isCheckbox, value, checked, onChange }) => {
   return (
     <>
       {isSelect === true ? (
         <>
           <StyledLabel htmlFor={id}>{label}</StyledLabel>
-          <StyledInput as="select" name={name} id={id}>
+          <StyledInput as="select" name={name} id={id} onChange={onChange} value={value}>
             {selectOptions.map(({ text, value }) => (
               <option key={text} value={value}>
                 {text}
@@ -20,13 +20,13 @@ const FormField = ({ type, name, id, label, isSelect, isCheckbox }) => {
         </>
       ) : isCheckbox ? (
         <CheckboxWrapper>
-          <StyledCheckbox type={type} name={name} id={id} />
+          <StyledCheckbox type={type} name={name} id={id} onChange={onChange} value={value} checked={checked} />
           <StyledLabel htmlFor={id}>{label}</StyledLabel>
         </CheckboxWrapper>
       ) : (
         <>
           <StyledLabel htmlFor={id}>{label}</StyledLabel>
-          <StyledInput type={type} name={name} id={id} />
+          <StyledInput type={type} name={name} id={id} onChange={onChange} value={value} />
         </>
       )}
     </>
