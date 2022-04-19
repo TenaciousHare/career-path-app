@@ -61,7 +61,7 @@ const Root = () => {
         <MainTemplate>
           <Wrapper>
             <Routes>
-              <Route path="/career-path-app" exact element={<Home />} />
+              <Route index element={<Home />} />
               <Route
                 path="/career-path-app/add-preference"
                 element={<Form formValues={formValues} handleInputChange={handleInputChange} handleAddPreference={handleAddPreference} />}

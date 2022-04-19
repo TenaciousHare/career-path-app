@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <NavWrapper>
       <LinkWrapper>
-        <StyledLink to="/career-path-app">
+        <StyledLink to="/career-path-app" end>
           <span className="icon">
             <i className="fa-solid fa-house" />
           </span>
