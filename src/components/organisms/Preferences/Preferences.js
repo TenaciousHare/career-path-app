@@ -1,9 +1,10 @@
-import { Title } from 'components/atoms/Title/Title';
 import React from 'react';
+import { Title } from 'components/atoms/Title/Title';
+import { Wrapper } from './Preferences.styles';
 
 const Preferences = ({ preferences }) => {
   return (
-    <div>
+    <Wrapper>
       <ul>
         {preferences.length > 0 ? (
           preferences.map(({ id, firstName, lastName, phone, industry }) => (
@@ -26,7 +27,7 @@ const Preferences = ({ preferences }) => {
           <Title>There are currently no career path preferences in the database</Title>
         )}
       </ul>
-    </div>
+    </Wrapper>
   );
 };
 
