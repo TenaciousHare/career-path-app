@@ -13,3 +13,36 @@ export const Wrapper = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.grey};
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.04), 0px 4px 3.25px rgba(0, 0, 0, 0.02);
 `;
+
+export const ContactsWrapper = styled.div`
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  &:hover {
+    border-radius: 10px;
+    background-color: ${({ theme }) => theme.colors.orange};
+    & .icon,
+    .text {
+      color: ${({ theme }) => theme.colors.white};
+    }
+  }
+  & .icon {
+    font-size: ${({ theme }) => theme.fontSize.ll};
+    margin: 5px 15px;
+  }
+
+  & .text {
+    font-size: ${({ theme }) => theme.fontSize.l};
+    margin: 5px 15px;
+  }
+`;
+
+export const StyledExternalLink = styled.a`
+  display: block;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.black80};
+`;

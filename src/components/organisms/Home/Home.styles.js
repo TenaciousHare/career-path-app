@@ -16,15 +16,17 @@ export const Wrapper = styled.div`
 `;
 
 export const Banner = styled.div`
+  width: 300px;
+  height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 export const StyledLogo = styled(Logo)`
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
-  fill: ${({ theme }) => theme.colors.orange};
+  padding: 5px;
+  width: 75px;
+  height: 75px;
 `;
 
 export const Paragraph = styled.p`
