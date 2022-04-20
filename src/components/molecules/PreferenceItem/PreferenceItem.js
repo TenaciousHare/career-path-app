@@ -1,16 +1,25 @@
-import React from 'react';
-import { Wrapper, FullName, Phone, StyledInfo, Industry } from './PreferenceItem.styles';
+import React, { useContext } from 'react';
+import { Wrapper, FullName, StyledInfo, DataWrapper, StyledDeleteButton } from './PreferenceItem.styles';
+import { PreferencesContext } from 'providers/PreferencesProvider';
 
-const PreferenceItem = ({ preference: { firstName, lastName, industry, phone } }) => {
+const PreferenceItem = ({ preference: { id, firstName, lastName, industry, phone } }) => {
+  const { deletePreference } = useContext(PreferencesContext);
   return (
     <Wrapper>
-      <StyledInfo>
+      <DataWrapper>
         <FullName>
           {firstName} {lastName}
         </FullName>
-        <Phone>{phone}</Phone>
-      </StyledInfo>
-      <Industry>{industry}</Industry>
+        <StyledInfo>
+          <p>Phone: {phone}</p>
+          <p>Path: {industry}</p>
+        </StyledInfo>
+      </DataWrapper>
+      <StyledDeleteButton onClick={() => deletePreference(id)}>
+        <span className="icon">
+          <i className="fa-solid fa-x" />
+        </span>
+      </StyledDeleteButton>
     </Wrapper>
   );
 };
