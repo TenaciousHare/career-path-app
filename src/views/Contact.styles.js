@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.white};
-  width: 400px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   padding: 40px;
   border-radius: 16px;
   border: 1px solid ${({ theme }) => theme.colors.grey};
@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ContactsWrapper = styled.div`
-  width: 50%;
+  width: 100%;
   align-self: center;
   display: flex;
   flex-direction: row;

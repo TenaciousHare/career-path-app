@@ -1,6 +1,6 @@
 import React from 'react';
 import { Title } from 'components/atoms/Title/Title';
-import { Wrapper, Banner, StyledLogo, Paragraph } from './Home.styles';
+import { Wrapper, Banner, StyledLogo, Paragraph } from '../data/Home.styles';
 
 const Home = () => {
   return (

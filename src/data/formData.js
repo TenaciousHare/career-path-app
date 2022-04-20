@@ -1,4 +1,4 @@
-export const formFieldsData = [
+export const formData = [
   {
     id: 'firstName',
     type: 'text',
