@@ -4,7 +4,7 @@ import { StyledLabel } from 'components/atoms/Label/Label';
 import { StyledInput } from 'components/atoms/Input/Input';
 import { CheckboxWrapper, StyledCheckbox } from 'components/atoms/Checkbox/Checkbox';
 import { selectOptions } from 'data/selectOptions';
-const FormField = ({ type, name, id, label, isSelect, isCheckbox, value, checked, onChange }) => {
+const FormField = ({ type, name, id, label, isSelect, isCheckbox, isTextArea, value, checked, onChange }) => {
   return (
     <>
       {isSelect === true ? (
@@ -17,6 +17,12 @@ const FormField = ({ type, name, id, label, isSelect, isCheckbox, value, checked
               </option>
             ))}
           </StyledInput>
+          {value === 'industry-4' ? (
+            <>
+              <StyledLabel htmlFor="reason">Reason for choosing this career path</StyledLabel>
+              <StyledInput as="textarea" name="reason" id="reason" onChange={onChange} />
+            </>
+          ) : null}
         </>
       ) : isCheckbox ? (
         <CheckboxWrapper>

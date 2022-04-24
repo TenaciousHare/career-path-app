@@ -5,5 +5,5 @@ export const Line = styled.div`
   width: 320px;
   height: 0px;
   border: 1px solid ${({ theme }) => theme.colors.grey};
-  margin: 16px 0;
+  margin: 8px 0;
 `;
