@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const NavWrapper = styled.nav`
   position: relative;
-  margin: 50px auto;
+  margin: 35px auto;
   width: 400px;
   height: 70px;
   background-color: ${({ theme }) => theme.colors.white};

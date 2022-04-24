@@ -3,5 +3,5 @@ export const Title = styled.h2`
   font-weight: ${({ theme }) => theme.fontWeight.sb};
   font-size: ${({ theme }) => theme.fontSize.xl};
   color: ${({ theme }) => theme.colors.black};
-  margin: 16px 0;
+  margin: 8px 0;
 `;

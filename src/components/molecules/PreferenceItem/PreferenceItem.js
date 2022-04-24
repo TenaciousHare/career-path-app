@@ -17,6 +17,11 @@ const PreferenceItem = ({ preference: { id, firstName, lastName, industry, phone
       </DataWrapper>
       <StyledDeleteButton onClick={() => deletePreference(id)}>
         <span className="icon">
+          <i class="fa-solid fa-eye" />
+        </span>
+      </StyledDeleteButton>
+      <StyledDeleteButton onClick={() => deletePreference(id)}>
+        <span className="icon">
           <i className="fa-solid fa-x" />
         </span>
       </StyledDeleteButton>

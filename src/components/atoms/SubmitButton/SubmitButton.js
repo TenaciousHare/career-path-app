@@ -11,7 +11,7 @@ export const SubmitButton = styled.button`
   background-color: ${({ theme }) => theme.colors.orange};
   border-radius: 6px;
   border: none;
-  margin: 16px 0;
+  margin: 8px 0;
   color: white;
   font-size: ${({ theme }) => theme.fontSize.l};
 `;

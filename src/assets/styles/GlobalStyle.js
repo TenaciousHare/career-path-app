@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     overflow-y: hidden;
   }
   
-  a, button {
+  a, button, input, textarea {
     font-family: 'Outfit', sans-serif;
   }
 `;
