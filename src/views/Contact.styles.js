@@ -15,7 +15,8 @@ export const Wrapper = styled.div`
 `;
 
 export const ContactsWrapper = styled.div`
-  width: 100%;
+  width: 75%;
+  height: 40px;
   align-self: center;
   display: flex;
   flex-direction: row;
@@ -42,7 +43,9 @@ export const ContactsWrapper = styled.div`
 `;
 
 export const StyledExternalLink = styled.a`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.black80};
 `;
