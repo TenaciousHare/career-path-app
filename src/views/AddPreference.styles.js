@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { StyledLabel } from 'components/atoms/Label/Label';
-import { StyledInput } from 'components/atoms/Input/Input';
 
 export const Wrapper = styled.div`
   margin: 0;
@@ -26,29 +24,4 @@ export const FormWrapper = styled.form`
   width: 320px;
   height: auto;
   margin: 4px 0;
-`;
-
-export const FullNameWrapper = styled.div`
-  display: grid;
-  grid-template-areas:
-    'fNLabel lNLabel'
-    'fNInput lNInput';
-  ${StyledInput} {
-    width: 155px;
-    &:nth-child(1) {
-      grid-area: fNInput;
-    }
-    &:nth-child(2) {
-      grid-area: lNInput;
-    }
-  }
-  ${StyledLabel} {
-    margin-left: 6px;
-    &:nth-child(2) {
-      grid-area: fNLabel;
-    }
-    &:nth-child(1) {
-      grid-area: lNLabel;
-    }
-  }
 `;

@@ -4,11 +4,13 @@ import { DeleteButton } from 'components/atoms/DeleteButton/DeleteButton';
 export const Wrapper = styled.li`
   margin: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   background-color: ${({ theme }) => theme.colors.orange};
   width: 350px;
-  height: 60px;
-  padding: 10px;
+  height: 70px;
+  padding: 5px;
   border-radius: 10px;
   color: ${({ theme }) => theme.colors.lightGrey};
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.04), 0px 4px 3.25px rgba(0, 0, 0, 0.02);
@@ -19,17 +21,17 @@ export const DataWrapper = styled.div`
   flex-direction: column;
   margin: 0;
   padding: 0;
-  width: 85%;
+  width: 80%;
 `;
 
 export const FullName = styled.h3`
-  margin: 2px 0 2px 20px;
+  margin: 2px 0 2px 10px;
   padding: 0;
   font-size: ${({ theme }) => theme.fontSize.ll};
 `;
 
 export const StyledInfo = styled.div`
-  margin-left: 12px;
+  margin-left: 4px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -46,8 +48,8 @@ export const StyledInfo = styled.div`
 `;
 
 export const StyledDeleteButton = styled(DeleteButton)`
-  padding: 0;
-  margin: 2px;
+  padding: 5px;
+  margin: 5px 4px;
   transition: 0.2s linear;
   cursor: pointer;
   & .icon {

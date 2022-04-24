@@ -4,7 +4,7 @@ export const StyledInput = styled.input`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px;
+  padding: 10px;
   width: 320px;
   height: 40px;
   border-radius: 6px;

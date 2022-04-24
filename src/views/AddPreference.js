@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Wrapper, FormWrapper, FullNameWrapper } from './AddPreference.styles';
+import { Wrapper, FormWrapper } from './AddPreference.styles';
 import { Title } from 'components/atoms/Title/Title';
 import { Line } from 'components/atoms/Line/Line';
 import { SubmitButton } from 'components/atoms/SubmitButton/SubmitButton';
@@ -47,10 +47,9 @@ const AddPreference = () => {
       <Line />
 
       <FormWrapper onSubmit={handleSubmitPreference}>
-        <FullNameWrapper>
-          <FormField type="text" name="lastName" id="lastName" label="Last name" value={formValues['lastName']} onChange={handleInputChange} />
-          <FormField type="text" name="firstName" id="firstName" label="First name" value={formValues['firstName']} onChange={handleInputChange} />
-        </FullNameWrapper>
+        <FormField type="text" name="firstName" id="firstName" label="First name" value={formValues['firstName']} onChange={handleInputChange} />
+        <FormField type="text" name="lastName" id="lastName" label="Last name" value={formValues['lastName']} onChange={handleInputChange} />
+
         <FormField type="tel" name="phone" id="phone" label="Phone" value={formValues['phone']} onChange={handleInputChange} />
         <FormField name="industry" id="industry" label="Industry" value={formValues['industry']} onChange={handleInputChange} isSelect />
         <FormField
