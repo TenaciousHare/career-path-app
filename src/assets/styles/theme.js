@@ -6,6 +6,9 @@ export const theme = {
     lightGrey: '#EDF5F4',
     grey: '#D7DEDD',
     orange: '#DA4B26',
+    success: '#30D941',
+    warning: '#D9CD3B',
+    error: '#F0281D',
   },
   fontSize: {
     xl: '24px',

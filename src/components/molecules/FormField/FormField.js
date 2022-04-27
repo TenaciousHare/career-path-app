@@ -4,40 +4,40 @@ import { StyledLabel } from 'components/atoms/Label/Label';
 import { StyledInput } from 'components/atoms/Input/Input';
 import { CheckboxWrapper, StyledCheckbox } from 'components/atoms/Checkbox/Checkbox';
 import { selectOptions } from 'data/selectOptions';
-const FormField = ({ type, name, id, label, isSelect, isCheckbox, value, checked, onChange }) => {
+
+const FormField = React.forwardRef(({ type, name, id, label, isSelect, isCheckbox, isTextArea, ...props }, ref) => {
   return (
     <>
-      {isSelect === true ? (
+      {isSelect ? (
         <>
           <StyledLabel htmlFor={id}>{label}</StyledLabel>
-          <StyledInput as="select" name={name} id={id} onChange={onChange} value={value} data-testid={label}>
+          <StyledInput as="select" name={name} id={id} data-testid={label} {...props} ref={ref}>
             {selectOptions.map(({ text, value }) => (
               <option key={text} value={value}>
                 {text}
               </option>
             ))}
           </StyledInput>
-          {value === 'industry-4' ? (
-            <>
-              <StyledLabel htmlFor="reason">Reason for choosing this career path</StyledLabel>
-              <StyledInput as="textarea" name="reason" id="reason" onChange={onChange} data-testid="Reason for choosing this career path" />
-            </>
-          ) : null}
+        </>
+      ) : isTextArea ? (
+        <>
+          <StyledLabel htmlFor={id}>{label}</StyledLabel>
+          <StyledInput as="textarea" name={name} id={id} {...props} ref={ref} data-testid={label} />
         </>
       ) : isCheckbox ? (
         <CheckboxWrapper>
-          <StyledCheckbox type={type} name={name} id={id} onChange={onChange} value={value} checked={checked} data-testid={label} />
+          <StyledCheckbox type={type} name={name} id={id} {...props} ref={ref} data-testid={label} />
           <StyledLabel htmlFor={id}>{label}</StyledLabel>
         </CheckboxWrapper>
       ) : (
         <>
           <StyledLabel htmlFor={id}>{label}</StyledLabel>
-          <StyledInput type={type} name={name} id={id} onChange={onChange} value={value} data-testid={label} />
+          <StyledInput type={type} name={name} id={id} {...props} ref={ref} data-testid={label} />
         </>
       )}
     </>
   );
-};
+});
 
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
@@ -46,6 +46,7 @@ FormField.propTypes = {
   type: PropTypes.string,
   isSelect: PropTypes.bool,
   isCheckbox: PropTypes.bool,
+  isTextArea: PropTypes.bool,
 };
 
 export default FormField;
