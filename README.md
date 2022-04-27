@@ -4,7 +4,7 @@
 [[https://user-images.githubusercontent.com/33751642/165538802-d31a5136-2f32-4375-b183-639707f7f36d.svg | width: 100px]]
 
 
-img[src*="#thumbnail"] {
+img[src*="https://user-images.githubusercontent.com/33751642/165538802-d31a5136-2f32-4375-b183-639707f7f36d.svg"] {
    width:100px;
    height:100px;
 }
