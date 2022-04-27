@@ -1,5 +1,3 @@
 # Career path app
 
-[![styledcomponents](https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png|width=50px)][1]
-
-[1]: https://github.com/styled-components/styled-components
+![logo](https://user-images.githubusercontent.com/33751642/165537922-f3c8eee7-7bbb-427c-ba3f-b721a4558610.svg)
