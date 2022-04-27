@@ -1,3 +1,20 @@
-# [1] Career path app
+# Career path app
 
-<img src="https://user-images.githubusercontent.com/33751642/165537922-f3c8eee7-7bbb-427c-ba3f-b721a4558610.svg" width="100" height="100">[1]
+
+[[https://user-images.githubusercontent.com/33751642/165538802-d31a5136-2f32-4375-b183-639707f7f36d.svg | width: 100px]]
+
+
+img[src*="#thumbnail"] {
+   width:100px;
+   height:100px;
+}
+img[title="thumbnail"] {
+   width:200px;
+}
+img[alt$="-thumbnail"]{
+    width:300px;
+}
+
+![img](link#thumbnail) <!-- src = link#thumbnail -->
+![img](link "thumbnail") <!-- title = thumbnail -->
+![img -thumbnail](link) <!-- alt = img -thumbnail -->
