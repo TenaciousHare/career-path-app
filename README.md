@@ -2,9 +2,8 @@
 
 ## Purpose of the application
 
-<div style="text-align: justify">The purpose of this app is to test my React programming skills. While solving the tasks, I tried to use my experience gained while creating other projects. I tried to perform them knowing that I am creating a more complicated system than what was indicated in the task. I used technologies that,
-in my opinion, should be used in larger projects.</div>
-
+The purpose of this app is to test my React programming skills. While solving the tasks, I tried to use my experience gained <br> while creating other projects. I tried to perform them knowing that I am creating a more complicated system than what was<br> indicated in the task.
+I used technologies that, in my opinion, should be used in larger projects.
 ## Technologies used
 
 - [React](https://reactjs.org/)
