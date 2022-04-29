@@ -1,10 +1,11 @@
 import React from 'react';
 import { Title } from 'components/atoms/Title/Title';
-import { Wrapper, Banner, StyledLogo, Paragraph } from '../data/Home.styles';
+import { ViewWrapper } from 'components/atoms/ViewWrapper/ViewWrapper';
+import { Banner, StyledLogo, Paragraph } from './Home.styles';
 
 const Home = () => {
   return (
-    <Wrapper>
+    <ViewWrapper>
       <Banner>
         <StyledLogo />
         <Title>Career Path App</Title>
@@ -14,7 +15,7 @@ const Home = () => {
         other projects. I tried to perform them knowing that I am creating a more complicated system than what was indicated in the task. I used
         technologies that, in my opinion, should be used in larger projects.
       </Paragraph>
-    </Wrapper>
+    </ViewWrapper>
   );
 };
 

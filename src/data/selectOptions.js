@@ -1,22 +1,22 @@
 export const selectOptions = [
   {
     value: '',
-    text: 'Choose an option',
+    text: 'Choose your path',
   },
   {
-    value: 'industry-1',
-    text: 'Industry 1',
+    value: 'Career path 1',
+    text: 'Career path 1',
   },
   {
-    value: 'industry-2',
-    text: 'Industry 2',
+    value: 'Career path 2',
+    text: 'Career path 2',
   },
   {
-    value: 'industry-3',
-    text: 'Industry 3',
+    value: 'Career path 3',
+    text: 'Career path 3',
   },
   {
-    value: 'industry-4',
-    text: 'Industry 4',
+    value: 'Career path 4',
+    text: 'Career path 4',
   },
 ];

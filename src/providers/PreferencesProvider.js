@@ -16,7 +16,8 @@ const PreferencesProvider = ({ children }) => {
       firstName: values.firstName,
       lastName: values.lastName,
       phone: values.phone,
-      industry: values.industry,
+      path: values.path,
+      reason: values.reason,
       confirmation: values.confirmation,
     };
     setPreferences([newPreference, ...preferences]);
