@@ -105,5 +105,3 @@ export const StyledLink = styled(NavLink)`
     transform: translateX(calc(70px * 3));
   }
 `;
-
-// 1em - 14px

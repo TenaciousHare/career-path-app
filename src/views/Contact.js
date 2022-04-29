@@ -1,10 +1,11 @@
 import React from 'react';
-import { Wrapper, ContactsWrapper, StyledExternalLink } from './Contact.styles';
+import { ContactsWrapper, StyledExternalLink } from './Contact.styles';
+import { ViewWrapper } from 'components/atoms/ViewWrapper/ViewWrapper';
 import { Title } from 'components/atoms/Title/Title';
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <ViewWrapper inContact>
       <Title>Contact Me</Title>
       <ContactsWrapper>
         <StyledExternalLink href="https://www.facebook.com/pawel.zajaczkowski91/" target="_blank">
@@ -38,7 +39,7 @@ const Contact = () => {
           <span className="text">Mail</span>
         </StyledExternalLink>
       </ContactsWrapper>
-    </Wrapper>
+    </ViewWrapper>
   );
 };
 

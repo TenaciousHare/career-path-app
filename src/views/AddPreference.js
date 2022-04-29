@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Wrapper, FormWrapper } from './AddPreference.styles';
+import { ViewWrapper } from 'components/atoms/ViewWrapper/ViewWrapper';
+import { FormWrapper } from './AddPreference.styles';
 import { Title } from 'components/atoms/Title/Title';
-import { Line } from 'components/atoms/Line/Line';
 import { SubmitButton } from 'components/atoms/SubmitButton/SubmitButton';
 import FormField from 'components/molecules/FormField/FormField';
 import { PreferencesContext } from 'providers/PreferencesProvider';
@@ -30,14 +30,12 @@ const AddPreference = () => {
 
   const onSubmit = (data) => {
     handleAddPreference(data);
-    console.log(data);
     reset({ ...initialFormState });
   };
 
   return (
-    <Wrapper>
+    <ViewWrapper>
       <Title>Add preference</Title>
-      <Line />
       <FormWrapper onSubmit={handleSubmit(onSubmit)}>
         <FormField type="text" name="firstName" id="firstName" label="First name" {...register('firstName', { required: true, minLength: 3 })} />
         {errors.firstName?.type === 'required' && <p>First name is required</p>}
@@ -46,9 +44,9 @@ const AddPreference = () => {
         {errors.lastName?.type === 'required' && <p>Last name is required</p>}
         {errors.lastName?.type === 'minLength' && <p>Last name should contain at least 3 characters </p>}
         <FormField type="tel" name="phone" id="phone" label="Phone" {...register('phone')} />
-        <FormField name="industry" id="industry" label="Industry" {...register('industry', { required: true })} isSelect />
+        <FormField name="path" id="path" label="Career path" {...register('path', { required: true })} isSelect />
         {errors.industry?.type === 'required' && <p>Choosing industry is required</p>}
-        {watch('industry') === 'industry-4' ? (
+        {watch('path') === 'Career path 4' ? (
           <FormField name="reason" id="reason" label="Reason for choosing this career path" {...register('reason', { required: true })} isTextArea />
         ) : null}
         {errors.reason?.type === 'required' && <p>Describing the rationale for this decision is required!</p>}
@@ -63,7 +61,7 @@ const AddPreference = () => {
         {errors.confirmation?.type === 'required' && <p>You must accept the Terms and Conditions</p>}
         <SubmitButton type="submit">Submit</SubmitButton>
       </FormWrapper>
-    </Wrapper>
+    </ViewWrapper>
   );
 };
 

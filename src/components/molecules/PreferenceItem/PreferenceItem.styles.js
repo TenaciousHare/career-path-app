@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import { DeleteButton } from 'components/atoms/DeleteButton/DeleteButton';
 
 export const Wrapper = styled.li`
+  align-self: center;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   background-color: ${({ theme }) => theme.colors.orange};
-  width: 350px;
+  width: 100%;
   height: 70px;
   padding: 5px;
   border-radius: 10px;
@@ -16,35 +17,15 @@ export const Wrapper = styled.li`
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.04), 0px 4px 3.25px rgba(0, 0, 0, 0.02);
 `;
 
-export const DataWrapper = styled.div`
+export const BtnWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  width: 80%;
 `;
 
 export const FullName = styled.h3`
-  margin: 2px 0 2px 10px;
+  width: 100%;
+  margin: 2px 10px;
   padding: 0;
-  font-size: ${({ theme }) => theme.fontSize.ll};
-`;
-
-export const StyledInfo = styled.div`
-  margin-left: 4px;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  p {
-    display: block;
-    margin: 0;
-    padding: 0 10px 0 10px;
-    font-size: ${({ theme }) => theme.fontSize.s};
-  }
-  p:nth-child(1) {
-    border-right: 1px solid ${({ theme }) => theme.colors.lightGrey};
-  }
+  font-size: ${({ theme }) => theme.fontSize.l};
 `;
 
 export const StyledDeleteButton = styled(DeleteButton)`
