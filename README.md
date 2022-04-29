@@ -10,6 +10,7 @@ I used technologies that, in my opinion, should be used in larger projects.
 - [Create React App](https://create-react-app.dev/)
 - [Styled components](https://styled-components.com/)
 - [React Router](https://reactrouter.com/)
+- [React Modal](https://github.com/reactjs/react-modal)
 - [React Hook Form](https://react-hook-form.com/)
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/)
