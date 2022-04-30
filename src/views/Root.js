@@ -20,11 +20,11 @@ const Root = () => {
           <PreferencesProvider>
             <Wrapper>
               <Routes>
-                <Route path="/career-path-app" element={<Navigate replace to="/career-path-app/home" />} />
-                <Route path="/career-path-app/home" element={<Home />} />
-                <Route path="/career-path-app/add-preference" element={<AddPreference />} />
-                <Route path="/career-path-app/show-preferences" element={<Preferences />} />
-                <Route path="/career-path-app/contact" element={<Contact />} />
+                <Route path="/" element={<Navigate replace to="/home" />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/add-preference" element={<AddPreference />} />
+                <Route path="/show-preferences" element={<Preferences />} />
+                <Route path="/contact" element={<Contact />} />
               </Routes>
             </Wrapper>
           </PreferencesProvider>

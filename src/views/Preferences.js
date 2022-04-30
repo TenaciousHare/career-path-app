@@ -28,7 +28,7 @@ const Preferences = () => {
       ) : (
         <>
           <p>There are currently no career path preferences in the database.</p>
-          <StyledLink to="/career-path-app/add-preference">Add new preference</StyledLink>
+          <StyledLink to="/add-preference">Add new preference</StyledLink>
         </>
       )}
 
