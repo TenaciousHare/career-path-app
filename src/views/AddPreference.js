@@ -6,6 +6,7 @@ import { SubmitButton } from 'components/atoms/SubmitButton/SubmitButton';
 import FormField from 'components/molecules/FormField/FormField';
 import { PreferencesContext } from 'providers/PreferencesProvider';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 const initialFormState = {
   id: '',
@@ -19,7 +20,7 @@ const initialFormState = {
 
 const AddPreference = () => {
   const { handleAddPreference } = useContext(PreferencesContext);
-
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -31,6 +32,7 @@ const AddPreference = () => {
   const onSubmit = (data) => {
     handleAddPreference(data);
     reset({ ...initialFormState });
+    return navigate('/show-preferences');
   };
 
   return (
