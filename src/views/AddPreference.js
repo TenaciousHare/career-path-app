@@ -45,7 +45,7 @@ const AddPreference = () => {
         {errors.lastName?.type === 'minLength' && <p>Last name should contain at least 3 characters </p>}
         <FormField type="tel" name="phone" id="phone" label="Phone" {...register('phone')} />
         <FormField name="path" id="path" label="Career path" {...register('path', { required: true })} isSelect />
-        {errors.industry?.type === 'required' && <p>Choosing industry is required</p>}
+        {errors.path?.type === 'required' && <p>Choosing career path is required</p>}
         {watch('path') === 'Career path 4' ? (
           <FormField name="reason" id="reason" label="Reason for choosing this career path" {...register('reason', { required: true })} isTextArea />
         ) : null}
