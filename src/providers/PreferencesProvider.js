@@ -10,14 +10,9 @@ export const PreferencesContext = React.createContext({
 const preferencesReducer = (preferences, action) => {
   switch (action.type) {
     case 'ADD PREFERENCE':
-      return {
-        preferences: [action.data],
-        ...preferences,
-      };
+      return [action.data, ...preferences];
     case 'DELETE PREFERENCE':
-      return {
-        preferences: preferences.filter((preference) => preference.id !== action.id),
-      };
+      return preferences.filter((preference) => preference.id !== action.id);
     default:
       return preferences;
   }
